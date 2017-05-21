@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "KhmerMoulSB";
+    src: url("../fonts/KhmerOS_muol.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "KhmerMSB";
+    src: url("../fonts/KhmerMuol.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "KhmerNoto";
+    src: url("../fonts/NotoSansKhmerUI-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kh-Battambang";
+    src: url("../fonts/Kh-Battambang.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Kh-Battambang {
+    font-family: 'Kh-Battambang';
+    font-weight: normal;
+}
+
+.kh {
+    font-family: 'Kh-Battambang';
+    font-weight: normal;
+}
+
+.khB {
+    font-family: 'KhmerMoulSB';
+    font-weight: normal;
+}
+
+.khMB {
+    font-family: 'KhmerMSB';
+    font-weight: normal;
+}
+
+.khNoto {
+    font-family: 'KhmerNoto';
+    font-weight: normal;
+}
+
+.Roboto {
+    font-family: 'Roboto';
+    font-weight: normal;
+}
