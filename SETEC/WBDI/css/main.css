@@ -1,12 +1,12 @@
 /* Custom Style */
 
-@import url('https://fonts.googleapis.com/css?family=Hanuman|Koulen|Nokora');
+@import url('https://fonts.googleapis.com/css?family=Hanuman|Koulen|Nokora|Kantumruy');
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
 @import "custom.css";
 @import "block_cate.css";
 @import "colors.css";
-
+@import "align-items.css";
 .menu-bar>li>a {
     font-size: large;
     font-family: 'Koulen', cursive;
@@ -45,23 +45,26 @@
 }
 
 .conner {
-    width:0;
+    width: 0;
     height: 0;
     border-style: solid;
     border-width: 20px;
     border-color: transparent transparent transparent grey;
 }
 
-a.left.carousel-control,a.right.carousel-control {
+a.left.carousel-control,
+a.right.carousel-control {
     opacity: 0.5 !important;
-     background: none;
+    background: none;
 }
 
-a.left.carousel-control:hover ,a.right.carousel-control:hover {
+a.left.carousel-control:hover,
+a.right.carousel-control:hover {
     opacity: 1 !important;
 }
 
-a.left.carousel-control > span ,a.right.carousel-control > span{
+a.left.carousel-control>span,
+a.right.carousel-control>span {
     border-radius: 50%;
     background: #d90c16;
 }

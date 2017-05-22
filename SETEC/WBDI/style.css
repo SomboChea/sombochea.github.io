@@ -1,0 +1,82 @@
+.sm-sl-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sm-sl-box figure {
+    max-height: 300px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.sm-sl-box figure img {
+    height: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.sm-sl-box:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.sm-sl-box>.caption-box {
+    position: absolute;
+    width: 100%;
+    background: #219fff;
+    bottom: 0px;
+    padding: 0px 10px;
+    color: white;
+}
+
+.sm-sl-box>.caption-box>h1 {
+    font-size: medium;
+}
+
+.sm-sl-box>.caption-box>p.date {
+    font-size: small;
+    float: left;
+}
+
+.sm-sl-box>.caption-box>p.cate {
+    font-size: small;
+    float: right;
+}
+
+@media screen and (max-width:768px) {}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #219fff;
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    ;
+}
+
+.btnAction {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: white;
+    right: 10px;
+    bottom: 2px;
+    text-align: center;
+    color: black;
+}
+
+.btnAction:hover {
+    background: #E34;
+    color: white;
+    cursor: pointer;
+}

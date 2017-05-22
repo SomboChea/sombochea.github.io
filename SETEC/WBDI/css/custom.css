@@ -1,8 +1,3 @@
-.row {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
 .sm-slider {
     padding: 0;
 }
@@ -528,3 +523,159 @@ figure {
         background: #673AB7;
     }
 }
+
+
+/* Slider Setting */
+
+.sm-sl-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sm-sl-box figure {
+    max-height: 300px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.sm-sl-box figure img {
+    height: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.sm-sl-box:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.sm-sl-box>.caption-box {
+    position: absolute;
+    width: 100%;
+    background: #219fff;
+    bottom: 0px;
+    padding: 0px 10px;
+    color: white;
+}
+
+.sm-sl-box>.caption-box>h1 {
+    font-size: medium;
+    font-family: 'Kantumruy', sans-serif;
+    line-height: 25px;
+}
+
+.sm-sl-box>.caption-box>p {
+    font-family: 'Hanuman', 'Roboto';
+}
+
+.sm-sl-box>.caption-box>p.date {
+    font-size: small;
+    float: left;
+}
+
+.sm-sl-box>.caption-box>p.cate {
+    font-size: small;
+    float: right;
+}
+
+@media screen and (max-width:768px) {}
+
+
+/* End Slider Setting */
+
+
+/* Items Setting in Category */
+
+.sm-sl-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sm-sl-item figure {
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.sm-sl-item figure img {
+    height: 120px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.sm-sl-item:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.sm-sl-item>.caption {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    padding: 10px 0px;
+    color: black;
+}
+
+.sm-sl-item>.caption>h1 {
+    font-size: medium;
+}
+
+
+/* Thumbnail Large */
+
+.sm-ml-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sm-ml-item figure {
+    max-height: 250px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.sm-ml-item figure img {
+    max-height: 300px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.sm-ml-item:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.sm-ml-item>.caption-box {
+    font-family: 'Hanuman', 'Roboto';
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    background: #219fff;
+    padding: 10px;
+    color: white;
+}
+
+.sm-ml-item>.caption-box>h1 {
+    font-size: x-large;
+    line-height: 38px;
+}
+
+@media screen and (max-width:991px) {}
+
+
+/* End Items Setting Category */
