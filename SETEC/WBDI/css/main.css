@@ -9,7 +9,7 @@
 @import "align-items.css";
 .menu-bar>li>a {
     font-size: large;
-    font-family: 'Koulen', cursive;
+    font-family: 'Koulen', 'Roboto';
     color: lightgrey !important;
 }
 
@@ -31,6 +31,11 @@
     background: #E53935;
     border: 0px;
     border-radius: 0px;
+}
+
+.dropdown-menu #txtEng,
+#txtKh {
+    font-family: 'Koulen', 'Roboto';
 }
 
 .cate-tab {
