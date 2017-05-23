@@ -89,4 +89,4 @@ function changeLang(id) {
 
 }
 
-console.log(sessionStorage['language']);
+// console.log(sessionStorage['language']);

@@ -1,6 +1,6 @@
 var people = [{
 
-        picture: "img_avatar.png",
+        picture: "sb.jpg",
         name: "Chea Sambo",
         gender: "Male",
         group: "SN1.2",
@@ -11,7 +11,7 @@ var people = [{
 
     },
     {
-        picture: "img_avatar2.png",
+        picture: "lida.jpg",
         name: "Eam Solida",
         gender: "Female",
         group: "SN1.2",
@@ -20,7 +20,7 @@ var people = [{
         email: "xxxx@gmail.com"
     },
     {
-        picture: "img_avatar.png",
+        picture: "sunlong.jpg",
         name: "Sunlong",
         gender: "Male",
         group: "SN1.2",
@@ -29,8 +29,8 @@ var people = [{
         email: "xxxx@gmail.com"
     },
     {
-        picture: "img_avatar.png",
-        name: "Helper",
+        picture: "tharoth.jpg",
+        name: "Sovanntharoth",
         gender: "Male",
         group: "SN1.2",
         position: "Design",
@@ -38,7 +38,7 @@ var people = [{
         email: "xxxx@gmail.com"
     },
     {
-        picture: "img_avatar.png",
+        picture: "visal.jpg",
         name: "Sorn Visal",
         gender: "Male",
         group: "SN1.2",
