@@ -64,6 +64,8 @@ function runthis(id) {
 
     var insideHtml = '<center><img src="images/' + profilepic + '" alt="" class="img-responsive img-circle" width=200px height=200px></center><br><div class="indent"><p><h3>Name     : ' + name + '</h3></p><p><h3>Group    : ' + group + '</h3> </p><p><h3>Gender   : ' + gender + '</h3></p><p><h3>Position : ' + position + '</h3></p><p><h3>Email    : ' + email + '</h3></p><p> <h3>Phone    : ' + phone + '</h3></p></div>';
     document.getElementsByClassName("modal-body")[0].innerHTML = insideHtml;
-    document.getElementsByClassName("modal-title")[0].innerHTML = "About : " + name;
+    document.getElementById("modal-title").innerHTML = "About : " + name;
+
+    console.log(document.getElementsByClassName("modal-title")[0].innerHTML);
 
 }
