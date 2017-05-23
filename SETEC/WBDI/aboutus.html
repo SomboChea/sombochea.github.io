@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="css/lighttext.css">
+    <script src="js/aboutus.js"></script>
+
+
+    <style type="text/css">
+        .box {
+            width: 100%;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+        
+        figure {
+            max-height: 200px;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+        }
+        
+        figure img {
+            height: 120px;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+        }
+        
+        .box:hover img {
+            cursor: pointer;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+        }
+        
+        .box-profile {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: #219fff;
+            overflow: hidden;
+        }
+        
+        .overlay {
+            position: relative;
+            width: 100%;
+            background: #e34;
+            bottom: 0;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .overlay>.social {
+            width: 25%;
+            height: 100%;
+            color: white;
+            float: left;
+        }
+        
+        .overlay>.social:hover {
+            opacity: 0.8;
+            font-size: 10pt;
+            cursor: pointer;
+        }
+        
+        .helper-name {
+            font-family: 'Koulen', 'Roboto';
+            position: absolute;
+            background: #219fff;
+            top: 10px;
+            left: 0;
+            z-index: 1;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 0px 30px 30px 0px;
+            opacity: 0;
+        }
+        
+        .helper-group {
+            font-family: 'Koulen', 'Roboto';
+            position: absolute;
+            background: #219fff;
+            bottom: 10px;
+            right: 0;
+            z-index: 2;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px 0px 0px 30px;
+            opacity: 0;
+        }
+        
+        .box:hover .helper-name,
+        .box:hover .helper-group {
+            transition: .3s ease-in;
+            opacity: 1;
+        }
+        
+        @media screen and (max-width:992px) {
+            .box {
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+                padding: 0px 150px;
+            }
+            .ai {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width:600px) {
+            .box {
+                padding: 0px 30px;
+            }
+        }
+        
+        @media screen and (max-width:400px) {
+            .box {
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                padding: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="margin:0px -15px">
+            <div class="col-md-12 box-h-200 col-xs-12 bg-black">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 align centered">
+                        <div class="box-logo">
+                            <img src="images/logo.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-8 hidden-xs">
+                        <div class="box-ads align centered">
+                            <img src="images/ads_1.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="navbar-fixed-top" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <!--<a class="navbar-brand" href="#">ព័ត៌មានខ្មែរ</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="container">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav menu-bar">
+                        <li><a href="index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+                        <li id="txtTech">
+                            <a href="#"></a>
+                        </li>
+                        <li id="txtEnter">
+                            <a href="#"></a>
+                        </li>
+                        <li id="txtSp">
+                            <a href="#"></a>
+                        </li>
+                        <li id="txtLife">
+                            <a href="#"></a>
+                        </li>
+                        <li class="active" id="txtAbout">
+                            <a href="#"><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="txtContact">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-bar">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="txtLang"><i class="fa fa-language" aria-hidden="true"></i> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li id="txtEng" onclick="changeLang(0)">
+                                    <a href="javascript:void()"></a>
+                                </li>
+                                <li id="txtKh" onclick="changeLang(1)">
+                                    <a href="javascript:void()"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="txtSign" data-toggle="modal" data-target="#modalSignin"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <svg viewBox="0 0 960 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">SMLOGX </text>
+                    </symbol>
+
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box">
+
+                            <DIV class="box-profile" onclick="runthis(0)" data-toggle="modal" data-target="#about">
+                                <figure><img src="images/sb.jpg" class="img-responsive"></figure>
+                                <div class="helper-name">Name : Chea Sambo</div>
+                                <div class="helper-group">Group : SN1.2</div>
+                            </DIV>
+                            <div class="overlay">
+                                <div class="social bg-pink-500 align centered">
+                                    <i class="fa fa-facebook fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-400 align centered">
+                                    <i class="fa fa-twitter fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-300 align centered">
+                                    <i class="fa fa-instagram fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-200 align centered">
+                                    <i class="fa fa-youtube fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <DIV class="box-profile" onclick="runthis(2)" data-toggle="modal" data-target="#about">
+                                <figure><img src="images/img_avatar.png" class="img-responsive"></figure>
+                                <div class="helper-name">Name : Oung Sunlong</div>
+                                <div class="helper-group">Group : SN1.2</div>
+                            </DIV>
+                            <div class="overlay">
+                                <div class="social bg-pink-500 align centered">
+                                    <i class="fa fa-facebook fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-400 align centered">
+                                    <i class="fa fa-twitter fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-300 align centered">
+                                    <i class="fa fa-instagram fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-200 align centered">
+                                    <i class="fa fa-youtube fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <DIV class="box-profile" onclick="runthis(1)" data-toggle="modal" data-target="#about">
+                                <figure><img src="images/img_avatar2.png" class="img-responsive"></figure>
+                                <div class="helper-name">Name : Eam Sellida</div>
+                                <div class="helper-group">Group : SN1.2</div>
+                            </DIV>
+                            <div class="overlay">
+                                <div class="social bg-pink-500 align centered">
+                                    <i class="fa fa-facebook fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-400 align centered">
+                                    <i class="fa fa-twitter fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-300 align centered">
+                                    <i class="fa fa-instagram fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-200 align centered">
+                                    <i class="fa fa-youtube fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <br />
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row align centered ai">
+                    <div class="col-md-4">
+                        <div class="box">
+                            <DIV class="box-profile" onclick="runthis(3)" data-toggle="modal" data-target="#about">
+                                <figure><img src="images/img_avatar.png" class="img-responsive"></figure>
+                                <div class="helper-name">Name : Meas Sovanntharoth</div>
+                                <div class="helper-group">Group : SN1.2</div>
+                            </DIV>
+                            <div class="overlay">
+                                <div class="social bg-pink-500 align centered">
+                                    <i class="fa fa-facebook fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-400 align centered">
+                                    <i class="fa fa-twitter fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-300 align centered">
+                                    <i class="fa fa-instagram fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-200 align centered">
+                                    <i class="fa fa-youtube fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <DIV class="box-profile" onclick="runthis(4)" data-toggle="modal" data-target="#about">
+                                <figure><img src="images/img_avatar.png" class="img-responsive"></figure>
+                                <div class="helper-name">Name : Sorn Visal</div>
+                                <div class="helper-group">Group : SN1.2</div>
+                            </DIV>
+                            <div class="overlay">
+                                <div class="social bg-pink-500 align centered">
+                                    <i class="fa fa-facebook fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-400 align centered">
+                                    <i class="fa fa-twitter fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-300 align centered">
+                                    <i class="fa fa-instagram fa-lg"></i>
+                                </div>
+                                <div class="social bg-pink-200 align centered">
+                                    <i class="fa fa-youtube fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <br />
+    </br /><br />
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Sign In</h4>
+                </div>
+                <form class="form-horizontal frm">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+          <input type="checkbox"> Remember me
+        </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Sign in</button> &nbsp; <button type="submit" class="btn btn-default" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalRegister">Register</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalRegister">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Register</h4>
+                </div>
+                <form class="form-horizontal frm">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <div class="container-fluid">
+        <div class="row" style="margin:0px -15px">
+            <div class="col-md-12 bg-grey-900">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sm-footer">
+                                <div class="col-md-4">
+                                    <img src="images/footer-logo.png">
+                                    <br />
+                                    <h5 class="sm-footer-text">© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</h5>
+                                    <p class="sm-footer-text-p"><b>អាសយដ្ឋាន</b>
+                                        <br />អគារ​លេខ ៣០៨ មហាវិថីព្រះមុន្នីវង្ស សង្កាត់បឹងរាំង ខណ្ឌដូនពេញ</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="sm-footer-text-h">អំពីយើង</h4>
+                                    <h5 class="sm-footer-text-p">Sabay Digital Corporation ជា​ក្រុមហ៊ុន​ព័ត៌មាន​ឌីជីថល និង​កម្សាន្ត​ឈាន​មុខ​គេ​នៅ​កម្ពុជា។ ព័ត៌មាន​បន្ថែម ផលិត​ផល​ និង​ សេវាកម្ម របស់ Sabay</h5>
+                                    <a href="#"><img class="box-sy" src="images/s_3.png"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_1.jpg"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_2.png"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_4.png"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_5.png"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="sm-footer-text-h">ជួបគ្នានៅបណ្តាញសង្គម</h4>
+                                    <a href="#"><i class="box-social fa fa-facebook"></i></a>
+                                    <a href="#"><i class="box-social fa fa-twitter"></i></a>
+                                    <a href="#"><i class="box-social fa fa-instagram"></i></a>
+                                    <a href="#"><i class="box-social fa fa-youtube"></i></a>
+                                    <br />
+                                    <h5 class="sm-footer-text">ទំនាក់ទំនង </h5>
+                                    <p class="sm-footer-text-p">info@sabay.com <br />023 228 000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Modal About -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="about">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/lang.js"></script>
+
+</body>
+
+</html>

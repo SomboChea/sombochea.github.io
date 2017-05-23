@@ -16,7 +16,81 @@
 
 
     <!-- MENU -->
+    <div class="container-fluid">
+        <div class="row" style="margin:0px -15px">
+            <div class="col-md-12 box-h-200 col-xs-12 bg-black">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 align centered">
+                        <div class="box-logo">
+                            <img src="images/logo.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-8 hidden-xs">
+                        <div class="box-ads align centered">
+                            <img src="images/ads_1.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="navbar-fixed-top" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <!--<a class="navbar-brand" href="#">ព័ត៌មានខ្មែរ</a>-->
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="container">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav menu-bar">
+                        <li><a href="../../index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+                        <li id="txtTech">
+                            <a href="#"></a>
+                        </li>
+                        <li class="active" id="txtEnter">
+                            <a href="#"><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="txtSp">
+                            <a href="#"></a>
+                        </li>
+                        <li id="txtLife">
+                            <a href="#"></a>
+                        </li>
+                        <li id="txtAbout">
+                            <a href="#"></a>
+                        </li>
+                        <li id="txtContact">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-bar">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="txtLang"><i class="fa fa-language" aria-hidden="true"></i> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li id="txtEng" onclick="changeLang(0)">
+                                    <a href="javascript:void()"></a>
+                                </li>
+                                <li id="txtKh" onclick="changeLang(1)">
+                                    <a href="javascript:void()"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="txtSign" data-toggle="modal" data-target="#modalSignin"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <!-- END MENU -->
 
 
@@ -402,7 +476,135 @@
     <!-- END CONTENT -->
 
     <!-- FOOTER -->
+    <br />
+    </br /><br />
 
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Sign In</h4>
+                </div>
+                <form class="form-horizontal frm">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+          <input type="checkbox"> Remember me
+        </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Sign in</button> &nbsp; <button type="submit" class="btn btn-default" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalRegister">Register</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalRegister">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Register</h4>
+                </div>
+                <form class="form-horizontal frm">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <div class="container-fluid">
+        <div class="row" style="margin:0px -15px">
+            <div class="col-md-12 bg-grey-900">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sm-footer">
+                                <div class="col-md-4">
+                                    <img src="images/footer-logo.png">
+                                    <br />
+                                    <h5 class="sm-footer-text">© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</h5>
+                                    <p class="sm-footer-text-p"><b>អាសយដ្ឋាន</b>
+                                        <br />អគារ​លេខ ៣០៨ មហាវិថីព្រះមុន្នីវង្ស សង្កាត់បឹងរាំង ខណ្ឌដូនពេញ</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="sm-footer-text-h">អំពីយើង</h4>
+                                    <h5 class="sm-footer-text-p">Sabay Digital Corporation ជា​ក្រុមហ៊ុន​ព័ត៌មាន​ឌីជីថល និង​កម្សាន្ត​ឈាន​មុខ​គេ​នៅ​កម្ពុជា។ ព័ត៌មាន​បន្ថែម ផលិត​ផល​ និង​ សេវាកម្ម របស់ Sabay</h5>
+                                    <a href="#"><img class="box-sy" src="images/s_3.png"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_1.jpg"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_2.png"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_4.png"></a>
+                                    <a href="#"><img class="box-sy" src="images/s_5.png"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="sm-footer-text-h">ជួបគ្នានៅបណ្តាញសង្គម</h4>
+                                    <a href="#"><i class="box-social fa fa-facebook"></i></a>
+                                    <a href="#"><i class="box-social fa fa-twitter"></i></a>
+                                    <a href="#"><i class="box-social fa fa-instagram"></i></a>
+                                    <a href="#"><i class="box-social fa fa-youtube"></i></a>
+                                    <br />
+                                    <h5 class="sm-footer-text">ទំនាក់ទំនង </h5>
+                                    <p class="sm-footer-text-p">info@sabay.com <br />023 228 000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- END FOOTER -->
 
 

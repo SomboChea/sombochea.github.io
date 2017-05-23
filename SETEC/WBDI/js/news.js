@@ -1,35 +1,8 @@
 function getNews() {
 
-    var news = new Array(
-        "<li><a href='#'><b>មើលវីដេអូនេះ​ ទើប​ដឹងថា Apple Park ពេល​យប់​ស្អាត​ខ្លាំង</b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>",
-        "<li><a href='#'><b></b></a></li>"
+    var data = new Array(
+        '<li><a href="topics/technology/tech-011.html"><b>ដឹង CEO ក្រុមហ៊ុន​បច្ចេកវិទ្យាលំដាប់កំពូលៗ ពាក់​ស្បែកជើង​តម្លៃ​ប៉ុន្មាន​អត់?</b></a></li>',
+        '<li><a href="topics/technology/tech-003link.html"><b>iPhone 7 Plus​ ​ផ្ទុះ​ឆេះ​មួយ​ករណី​ទៀត​ហើយ!</b></a></li>'
     );
 
     var gen_nums = [];

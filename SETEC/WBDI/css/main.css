@@ -110,3 +110,77 @@ a.right.carousel-control>span {
     transform: scale(0.98);
     animation: 0.5s;
 }*/
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #219fff;
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    ;
+}
+
+.btnAction {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: white;
+    right: 10px;
+    bottom: 2px;
+    text-align: center;
+    color: black;
+}
+
+.btnAction:hover {
+    background: #E34;
+    color: white;
+    cursor: pointer;
+}
+
+p a {
+    font-family: 'Hanuman', 'Roboto';
+    color: white;
+}
+
+.box-logo {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.box-ads {
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+    overflow: hidden;
+}
+
+.box-social {
+    padding: 10px;
+    background: #219fff;
+    border-radius: 5%;
+    color: white;
+}
+
+.box-social:hover {
+    opacity: 0.9;
+}
+
+.box-sy {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    margin-left: 3px;
+    border-radius: 5%;
+    color: white;
+}
+
+.frm {
+    padding: 20px;
+}

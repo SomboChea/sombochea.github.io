@@ -73,16 +73,16 @@ function changeLang(id) {
     var tEng = lg.english;
     var tKh = lg.khmer;
 
-    txtTech.innerHTML = '<a href="#">' + tT + '</a>'
-    txtEnter.innerHTML = '<a href="#">' + tE + '</a>'
-    txtSp.innerHTML = '<a href="#">' + tSp + '</a>'
-    txtLife.innerHTML = '<a href="#">' + tL + '</a>'
-    txtAbout.innerHTML = '<a href="#">' + tAbout + '</a>'
-    txtContact.innerHTML = '<a href="#">' + tCon + '</a>'
+    txtTech.innerHTML = '<a href="topics/technology/index.html">' + tT + '</a>'
+    txtEnter.innerHTML = '<a href="topics/entertaintment/index.html">' + tE + '</a>'
+    txtSp.innerHTML = '<a href="topics/sport/index.html">' + tSp + '</a>'
+    txtLife.innerHTML = '<a href="topics/life/index.html">' + tL + '</a>'
+    txtAbout.innerHTML = '<a href="aboutus.html">' + tAbout + '</a>'
+    txtContact.innerHTML = '<a href="contactus.html">' + tCon + '</a>'
     txtLang.innerHTML = '<i class="fa fa-language" aria-hidden="true"></i> ' + tLang + '<span class="caret"></span>';
-    txtSign.innerHTML = '<a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> ' + tSign + '</a>';
-    txtEng.innerHTML = '<a href="#">' + tEng + '</a>';
-    txtKh.innerHTML = '<a href="#">' + tKh + '</a> ';
+    txtSign.innerHTML = '<a href="javascript:void()"><i class="fa fa-sign-in" aria-hidden="true"></i> ' + tSign + '</a>';
+    txtEng.innerHTML = '<a href="javascript:void()">' + tEng + '</a>';
+    txtKh.innerHTML = '<a href="javascript:void()">' + tKh + '</a> ';
 
     sessionStorage['language'] = id;
     //console.log(id + " \n " + tEng + " \n " + tKh);
