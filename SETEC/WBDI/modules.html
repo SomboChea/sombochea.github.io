@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modules</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+</head>
+
+<body>
+
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="sm-big-view-thumb">
+                            <div class="sm-hold-img"></div>
+                            <p class="caption">ប្រធាន​ Microsoft ៖ ទូរស័ព្ទ​ជំនាន់​ក្រោយ​របស់​យើង អាច​មើល​មិន​ដូច​ជា​ទូរស័ព្ទ</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <div class="sm-small-view-thumb">
+                            <div class="sm-hold-img"></div>
+                            <p class="caption">ប្រធាន​ Microsoft ៖ ទូរស័ព្ទ​ជំនាន់​ក្រោយ​របស់​យើង អាច​មើល​មិន​ដូច​ជា​ទូរស័ព្ទ</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="sm-small-view-thumb">
+                            <div class="sm-hold-img"></div>
+                            <p class="caption">ប្រធាន​ Microsoft ៖ ទូរស័ព្ទ​ជំនាន់​ក្រោយ​របស់​យើង អាច​មើល​មិន​ដូច​ជា​ទូរស័ព្ទ</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sm-category-header">
+                    <div class="sm-category-title">
+                        Technology
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sm-category-circle">
+                    <p class="sm-category-circle-title">Technology</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sm-category-line">
+                    <div class="sm-category-line-box">Technology</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mini-circle">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <br /><br /><br /><br /><br /><br />
+
+    <!-- Featured -->
+    <div class="row">
+        <div class="col-md-12 sm-featured">
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="item">
+                        <ul id="content-slider" class="content-slider">
+                            <li>
+                                <h3>1</h3>
+                            </li>
+                            <li>
+                                <h3>2</h3>
+                            </li>
+                            <li>
+                                <h3>3</h3>
+                            </li>
+                            <li>
+                                <h3>4</h3>
+                            </li>
+                            <li>
+                                <h3>5</h3>
+                            </li>
+                            <li>
+                                <h3>6</h3>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Featured -->
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="js/lightslider.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider();
+        });
+
+        $(document).ready(function () {
+            $("#content-slider").lightSlider({
+                loop: true,
+                keyPress: true
+            });
+            $('#image-gallery').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

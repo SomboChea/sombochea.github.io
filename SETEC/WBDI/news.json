@@ -1,0 +1,46 @@
+{
+    "news_local":
+    {
+        "id":1,
+        "title":"My News id 1",
+        "short_desc":"This news 1 talk about anything",
+        "long_desc":"everything about news in long desc.",
+        "author":"SamboChea",
+        "posted_date":"02/3/2017",
+        "other":"other"
+    },
+
+    "news_intl":
+    {
+        "id":1,
+        "title":"My News id 1",
+        "short_desc":"This news 1 talk about anything",
+        "long_desc":"everything about news in long desc.",
+        "author":"SamboChea",
+        "posted_date":"02/3/2017",
+        "other":"other"
+    },
+
+    "news_sport":
+    {
+        "id":1,
+        "title":"My News id 1",
+        "short_desc":"This news 1 talk about anything",
+        "long_desc":"everything about news in long desc.",
+        "author":"SamboChea",
+        "posted_date":"02/3/2017",
+        "other":"other"
+    },
+
+    "news_tech":
+    {
+        "id":1,
+        "title":"My News id 1",
+        "short_desc":"This news 1 talk about anything",
+        "long_desc":"everything about news in long desc.",
+        "author":"SamboChea",
+        "posted_date":"02/3/2017",
+        "other":"other"
+    }
+
+}
