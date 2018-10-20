@@ -41,7 +41,7 @@ module.exports = "input#message {\r\n    background:#fff;\r\n    border:none;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">Live Kotlin Questions</mat-toolbar>\n<div class=\"row columns container\">\n  <button (click)=\"login()\" *ngIf=\"!(user | async)?.uid\">Anonymous Login</button>\n  <button (click)=\"logout()\" *ngIf=\"(user | async)?.uid\">Logout</button>\n\n  <input type=\"text\" id=\"question\" *ngIf=\"(user | async)?.uid\" placeholder=\"Let's question in?\" (keyup.enter)=\"Send($event.target.value)\" required [(ngModel)]=\"msgVal\" />\n  <div id=\"details-container\">\n      <p *ngFor=\"let item of items | async\"><img src=\"./src/kotlin.png\" width=\"30px\" height=\"30px\">{{item.question}}</p>\n  </div>\n</div>"
+module.exports = "<mat-toolbar color=\"primary\">Live Kotlin Questions</mat-toolbar>\n<div class=\"row columns container\">\n  <button (click)=\"login()\" *ngIf=\"!(user | async)?.uid\">Anonymous Login</button>\n  <button (click)=\"logout()\" *ngIf=\"(user | async)?.uid\">Logout</button>\n\n  <input type=\"text\" id=\"question\" *ngIf=\"(user | async)?.uid\" placeholder=\"Let's question in?\" (keyup.enter)=\"Send($event.target.value)\" required [(ngModel)]=\"msgVal\" />\n  <div id=\"details-container\">\n      <p *ngFor=\"let item of items | async\"><img src=\"./kotlinbarcamp/src/kotlin.png\" width=\"30px\" height=\"30px\">{{item.question}}</p>\n  </div>\n</div>"
 
 /***/ }),
 
